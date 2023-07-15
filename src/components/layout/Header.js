@@ -3,7 +3,7 @@ import React from 'react';
 const Header = () => {
   return (
     <header id='site-header'>
-      <div className='dark-background flex justify-center items-center h-9'>
+      <div className='dark-background h-9'>
         <div className='container py-1 px-2'>
           <p className='text-sm text-gray-300 text-center'>
             Learn more about our latest features

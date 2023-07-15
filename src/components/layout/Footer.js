@@ -5,7 +5,7 @@ import location from '../../images/logolocation.png';
 const Footer = () => {
   return (
     <footer id='site-footer' className='dark-background'>
-      <div className='footer-content flex justify-center items-center py-28'>
+      <div className='footer-content py-10 md:py-28'>
         <div className='container p-4'>
           <div className='grid md:grid-cols-2 gap-4'>
             <div className=''>
