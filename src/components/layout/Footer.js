@@ -9,6 +9,7 @@ const Footer = ({ focusEmailField }) => {
   const handleArrowClick = () => {
     focusEmailField();
   };
+
   return (
     <footer id='site-footer' className='dark-background'>
       <div className='footer-content py-10 md:py-24'>
@@ -35,13 +36,13 @@ const Footer = ({ focusEmailField }) => {
                 </h3>
                 <ul className='max-w-md space-y-3 text-white text-sm list-none list-inside'>
                   <li>
-                    <a href='#'>Azure</a>
+                    <a href='#azure'>Azure</a>
                   </li>
                   <li>
-                    <a href='#'>AWS</a>
+                    <a href='#aws'>AWS</a>
                   </li>
                   <li>
-                    <a href='#'>Google</a>
+                    <a href='#google'>Google</a>
                   </li>
                 </ul>
               </div>
@@ -51,23 +52,23 @@ const Footer = ({ focusEmailField }) => {
                 </h3>
                 <ul className='max-w-md space-y-3 text-white text-sm list-none list-inside'>
                   <li>
-                    <a href='#'>Terms Of Service</a>
+                    <a href='#terms'>Terms Of Service</a>
                   </li>
                   <li>
-                    <a href='#'>Privacy Policy</a>
+                    <a href='#privacy'>Privacy Policy</a>
                   </li>
                   <li>
-                    <a href='#'>Support</a>
+                    <a href='#support'>Support</a>
                   </li>
                 </ul>
               </div>
               <div className='relative'>
-                <img
+                <button
                   className='absolute -top-6 right-10'
-                  alt='Arrow'
-                  src={arrow}
                   onClick={handleArrowClick}
-                />
+                >
+                  <img alt='Arrow' src={arrow} />
+                </button>
               </div>
             </div>
           </div>
