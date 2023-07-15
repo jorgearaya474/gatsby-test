@@ -2,7 +2,13 @@ import React from 'react';
 import arrow from '../../images/arrow.png';
 import location from '../../images/logolocation.png';
 
-const Footer = () => {
+const Footer = ({ focusEmailField }) => {
+  /**
+   * Arrow click fucntion
+   */
+  const handleArrowClick = () => {
+    focusEmailField();
+  };
   return (
     <footer id='site-footer' className='dark-background'>
       <div className='footer-content py-10 md:py-24'>
@@ -60,6 +66,7 @@ const Footer = () => {
                   className='absolute -top-6 right-10'
                   alt='Arrow'
                   src={arrow}
+                  onClick={handleArrowClick}
                 />
               </div>
             </div>

@@ -7,7 +7,7 @@ const Layout = (props) => {
     <div className='site-layout'>
       <Header />
       <main>{props.children}</main>
-      <Footer />
+      <Footer focusEmailField={props.focusEmailField} />
     </div>
   );
 };

@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useRef } from 'react';
 import { isPhoneValid } from '../../utils/utils';
 import ThankYouMessage from '../ThankYouMessage';
 
-const ContactForm = () => {
+const ContactForm = ({ inputEmailRef }) => {
   const [fields, setFields] = useState({
     email: '',
     name: '',
@@ -67,6 +67,7 @@ const ContactForm = () => {
               required
               onChange={handleFieldChange}
               style={{ border: formErrors.email ? '2px solid red' : null }}
+              ref={inputEmailRef}
             />
             {formErrors.email ? (
               <p className='text-red-500'>{formErrors.email}</p>
