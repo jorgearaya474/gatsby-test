@@ -5,11 +5,14 @@ import location from '../../images/logolocation.png';
 const Footer = () => {
   return (
     <footer id='site-footer' className='dark-background'>
-      <div className='footer-content py-10 md:py-28'>
+      <div className='footer-content py-10 md:py-24'>
         <div className='container p-4'>
           <div className='grid md:grid-cols-2 gap-4'>
-            <div className=''>
-              <a className='text-white text-sm' href='tel:+1(877) 777-7777'>
+            <div>
+              <a
+                className='block text-white text-sm mb-2'
+                href='tel:+1(877) 777-7777'
+              >
                 ✆ +1(877) 777-7777
               </a>
               <div className='flex'>
