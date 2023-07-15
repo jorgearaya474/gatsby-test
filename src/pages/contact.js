@@ -1,10 +1,20 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import Layout from '../components/layout/layout';
 import ContactForm from '../components/ContactForm/ContactForm';
 
 const ContactPage = () => {
+  const inputEmailRef = useRef(null);
+
+  /**
+   * Focus email field function
+   */
+  const focusEmailField = () => {
+    if (inputEmailRef.current) {
+      inputEmailRef.current.focus();
+    }
+  };
   return (
-    <Layout>
+    <Layout focusEmailField={focusEmailField}>
       <div className='pt-6 md:pt-14'>
         <div className='container p-4'>
           <div className='mb-10'>
@@ -15,7 +25,7 @@ const ContactPage = () => {
           </div>
           <div className='grid md:grid-cols-3 gap-8'>
             <div className='md:col-span-2'>
-              <ContactForm />
+              <ContactForm inputEmailRef={inputEmailRef} />
             </div>
             <div>
               <p className='mb-4'>
