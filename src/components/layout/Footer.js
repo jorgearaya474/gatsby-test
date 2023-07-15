@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer id='site-footer' className='dark-background'>
       <div className='footer-content flex justify-center items-center py-28'>
-        <div className='container p-2'>
+        <div className='container p-4'>
           <div className='grid md:grid-cols-2 gap-4'>
             <div className=''>
               <a className='text-white text-sm' href='tel:+1(877) 777-7777'>
