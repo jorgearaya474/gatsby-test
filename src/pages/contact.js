@@ -1,5 +1,5 @@
 import React, { useRef } from 'react';
-import Layout from '../components/Layout/Layout';
+import Layout from '../components/layout/layout';
 import ContactForm from '../components/ContactForm/ContactForm';
 
 const ContactPage = () => {
